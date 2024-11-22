@@ -25,7 +25,7 @@ function App() {
     localStorage.setItem("contacts", JSON.stringify(contacts));
   }, [contacts]);
 
-  // Add a new contact
+  // новий контакт
   const handleAddContact = ({ name, number }) => {
     const newContact = { id: nanoid(), name, number };
     setContacts([...contacts, newContact]);
